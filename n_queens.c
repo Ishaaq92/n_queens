@@ -16,7 +16,7 @@ void	n_queens(int *set, int size, int num)
 {
 	int	*new_set;
 
-	for (int i=0; i < size; i++)
+	for (int i=0; i < num; i++)
 	{
 		if (check_in_set(set, size, i) == 1)
 			continue ;
@@ -26,10 +26,7 @@ void	n_queens(int *set, int size, int num)
 		n_queens(new_set, size + 1, num);
 	}
 	if (size == num)
-	{
-		printf("here");
 		print_set(set, size);
-	}
 	free(set);
 }
 

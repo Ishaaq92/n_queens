@@ -42,11 +42,12 @@ int	check_in_set(int *set, int size, int val)
 {
 	int	i;
 
-	i = 0;
-	while (i < size && set[i] != val)
-		i++;
-	if (set[i] == val)
-		return (1);
+	i = -1;
+	while (++i < size)
+	{
+		if (set[i] == val)
+			return (1);
+	}
 	return (0);
 }
 
@@ -61,6 +62,7 @@ void	print_set(int *set, int size)
 		if (i != size)
 			printf(" ");
 	}
+	printf("\n");
 }
 
 int	abs(int val)
