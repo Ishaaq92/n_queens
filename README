@@ -28,3 +28,10 @@ The second will look like this:
 As you can see the numbers correspond to the row number. 
 
 If the nth number in a given solution is k then the coordinate will be (k, n).
+
+
+Note that I developed this solution to the problem in Level 2 of Exam03. Although I didn't submit the solution in time I formalised it here as it's quite straight forward.
+
+Also note that the solution may have leaks. 
+
+Ishaaq Ahmed
